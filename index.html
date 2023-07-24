@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <header class="disc">
+            <div></div>
+            <div class="song-name">Song Name</div>
+            <div class="artist">Artist</div>
+        </header>
+        <div class="song-slider">
+            <input type="range" value="0">
+            <div class="time">
+            <p class="current-time"><span class="minutes">0</span>:<span class="sec">00</span></p>
+            <p class="duration"><span class="durMin">00</span>:<span class="durSec">00</span></p>
+            </div>
+        </div>
+        <main class="controls">
+            <img src="Assets/music-player.png" alt="prev-song" width="15px">
+            <img src="Assets/play.png" alt="play" width="15px">
+            <img src="Assets/pause.png" alt="pause" width="15px" class="pause">
+            <img src="Assets/music-player (1).png" alt="next-song" width="15px">
+        </main>
+        <footer class="volume">
+            <input type="range" value="50" name="vol" min="0" max="100" id="volumeRange">
+            <label for="vol">volume</label>
+        </footer>
+        <audio>
+            <source src="Assets/Chinni Chinni Aasa.mp3"> 
+        </audio>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
